@@ -1,2 +1,2 @@
-# mean-stack
+# tsmean
 MEAN Stack
