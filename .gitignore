@@ -1,0 +1,35 @@
+# Dependências
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Builds
+dist/
+backend/dist/
+frontend/dist/
+
+# Variáveis de ambiente
+.env
+backend/.env
+
+# Cobertura de testes
+coverage/
+backend/coverage/
+frontend/coverage/
+
+# Cache
+.angular/
+backend/.angular/
+*.tsbuildinfo
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Sistema
+.DS_Store
+Thumbs.db

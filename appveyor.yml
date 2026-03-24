@@ -1,0 +1,26 @@
+environment:
+  nodejs_version: "18"
+  DB_HOST: 127.0.0.1
+  DB_PORT: 3306
+  DB_USER: root
+  DB_PASS: Password12!
+  DB_NAME: tsmean_test
+
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - node --version
+  - npm --version
+  - npm run install:all
+
+services:
+  - mysql
+
+before_test:
+  - mysql -u root -pPassword12! -e "CREATE DATABASE IF NOT EXISTS tsmean_test;"
+
+test_script:
+  - npm run build:backend
+  - npm run test:backend
+  - npm run build:frontend
+
+build: off

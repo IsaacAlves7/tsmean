@@ -1,0 +1,31 @@
+language: node_js
+
+node_js:
+  - "18"
+  - "20"
+
+services:
+  - mysql
+
+before_install:
+  - mysql -e "CREATE DATABASE IF NOT EXISTS tsmean_test;" -uroot
+
+env:
+  - DB_HOST=127.0.0.1 DB_PORT=3306 DB_USER=root DB_PASS="" DB_NAME=tsmean_test
+
+cache:
+  directories:
+    - node_modules
+    - backend/node_modules
+    - frontend/node_modules
+
+install:
+  - npm run install:all
+
+script:
+  - npm run build:backend
+  - npm run test:backend
+  - npm run build:frontend
+
+notifications:
+  email: false

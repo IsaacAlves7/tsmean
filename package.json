@@ -1,0 +1,21 @@
+{
+  "name": "tsmean",
+  "version": "1.0.0",
+  "description": "TypeScript MEAN Stack: MySQL + TypeORM + NestJS + Angular",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm run install:backend && npm run install:frontend",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "start:backend": "cd backend && npm run start:dev",
+    "start:frontend": "cd frontend && npm start",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "test": "npm run test:backend && npm run test:frontend"
+  },
+  "keywords": ["typescript", "mysql", "typeorm", "nestjs", "angular", "tsmean"],
+  "author": "",
+  "license": "MIT"
+}
