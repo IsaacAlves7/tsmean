@@ -1,4 +1,4 @@
-# tsmean
+# 🐦‍⬛ tsmean
 > **TypeScript** · **MySQL** · **Express/NestJS** · **Angular** · **Node.js**
 
 Uma MEAN stack, full-stack moderna, fortemente tipada, construída inteiramente com TypeScript.
