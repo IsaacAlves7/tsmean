@@ -18,8 +18,6 @@ Uma MEAN stack, full-stack moderna, fortemente tipada, construída inteiramente 
 | **CI**             | Travis CI + AppVeyor          |
 | **Gerenciador**    | npm                           |
 
----
-
 ## 🚀 Início Rápido
 
 ### Pré-requisitos
@@ -63,8 +61,6 @@ npm run start:backend
 npm run start:frontend
 ```
 
----
-
 ## 🏗️ Estrutura do Projeto
 
 ```
@@ -103,8 +99,6 @@ npm run test:backend
 npm run test:frontend
 ```
 
----
-
 ## 🔌 API Endpoints
 
 | Método   | Rota            | Descrição              |
@@ -114,8 +108,6 @@ npm run test:frontend
 | `POST`   | `/users`        | Criar usuário          |
 | `PATCH`  | `/users/:id`    | Atualizar usuário      |
 | `DELETE` | `/users/:id`    | Deletar usuário        |
-
----
 
 ## 🔄 CI/CD
 
